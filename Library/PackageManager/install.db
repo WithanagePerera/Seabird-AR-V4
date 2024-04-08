@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "packages": {
+    "com.microsoft.mixedreality.openxr": {
+      "tarball": {
+        "hash": "a4cc3ecd3f67",
+        "mtime": 1711337051362,
+        "size": 10611639,
+        "localPath": "D:\\Projects\\Seabird\\Seabird-AR-V4\\Packages\\MixedReality\\com.microsoft.mixedreality.openxr-1.4.0.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.foundation": {
+      "tarball": {
+        "hash": "3bad99c89252",
+        "mtime": 1711337051729,
+        "size": 8670682,
+        "localPath": "D:\\Projects\\Seabird\\Seabird-AR-V4\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.foundation-2.7.3.tgz"
+      }
+    },
+    "com.microsoft.mixedreality.toolkit.standardassets": {
+      "tarball": {
+        "hash": "2095abe3b61d",
+        "mtime": 1711337050732,
+        "size": 5303497,
+        "localPath": "D:\\Projects\\Seabird\\Seabird-AR-V4\\Packages\\MixedReality\\com.microsoft.mixedreality.toolkit.standardassets-2.7.3.tgz"
+      }
+    }
+  }
+}
