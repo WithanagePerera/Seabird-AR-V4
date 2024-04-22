@@ -18,7 +18,6 @@ public class NewItemHandler : MonoBehaviour
     void Start()
     {
         positionsArray[0] = SwimLane.transform.position;
-        Debug.LogError("Triggered, " + positionsArray[0]);
         positionsArray[1] = StartNode.transform.position;
         positionsArray[2] = EndNode.transform.position;
         positionsArray[3] = Action.transform.position;

@@ -20,5 +20,7 @@ public class CloneItem : MonoBehaviour
         clone.transform.position = new Vector3(clone.transform.position.x + 0.1f, clone.transform.position.y, clone.transform.position.z);
 
         clone.SetActive(true);
+
+        Trashcan.gridElements.Add(clone);
     }
 }
