@@ -57,13 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CloneItem.cs" />
+    <Compile Include="Assets\Scripts\CloneLineRenderer.cs" />
     <Compile Include="Assets\Scripts\ColorChanging.cs" />
     <Compile Include="Assets\Scripts\Trashcan.cs" />
     <Compile Include="Assets\Scripts\NewItemHandler.cs" />
+    <Compile Include="Assets\Scripts\ElementCollisions.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\ElementLinker.cs" />
-    <Compile Include="Assets\Scripts\CloneLineRenderer.cs" />
-    <Compile Include="Assets\Scripts\ElementCollisions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

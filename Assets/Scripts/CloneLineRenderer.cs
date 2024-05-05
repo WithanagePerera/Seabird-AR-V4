@@ -10,7 +10,7 @@ public class CloneLineRenderer : MonoBehaviour
     StringBuilder cloneName = new StringBuilder("LineClone");
     public GameObject[] recentLinks = new GameObject[2];
 
-    string[] menuObjectNames = { "Swimlane", "Start Node", "End Node", "Action", "Join/Fork", "Decision/Merge", "Item", "Expand Grid Down", "Expand Grid Right", "Trash", "Grid Transparency Toggle" };
+    string[] menuObjectNames = { "Swimlane", "Start Node", "End Node", "Action", "Join/Fork", "Decision/Merge", "Item", "Expand Grid Down", "Expand Grid Right", "Trash", "Grid Transparency Toggle", "Top Border" };
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +26,9 @@ public class CloneLineRenderer : MonoBehaviour
 
     public void generateLine(GameObject object1, GameObject object2)
     {
+        if (menuObjectNames.Contains(object2.name.ToString()) || menuObjectNames.Contains(object1.name.ToString()))
+            return;
+
         if (recentLinks[0] != null && recentLinks[1] != null)
         {
             if (recentLinks.Contains(object1) && recentLinks.Contains(object2))
