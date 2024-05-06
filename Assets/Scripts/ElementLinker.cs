@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,9 @@ public class ElementLinker : MonoBehaviour
     public LineRenderer lineRenderer;
     public GameObject object1, object2;
     Vector3[] positions = new Vector3[2];
+
+    public static Dictionary<GameObject, ArrayList> connections = new Dictionary<GameObject, ArrayList>();
+
     // Start is called before the first frame update
     void Start()
     {

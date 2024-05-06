@@ -59,7 +59,7 @@
     <Compile Include="Assets\Scripts\CloneItem.cs" />
     <Compile Include="Assets\Scripts\CloneLineRenderer.cs" />
     <Compile Include="Assets\Scripts\ColorChanging.cs" />
-    <Compile Include="Assets\Scripts\Trashcan.cs" />
+    <Compile Include="Assets\Scripts\DeleteElement.cs" />
     <Compile Include="Assets\Scripts\NewItemHandler.cs" />
     <Compile Include="Assets\Scripts\ElementCollisions.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />

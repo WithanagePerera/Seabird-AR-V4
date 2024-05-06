@@ -93,13 +93,13 @@ public class Grid : MonoBehaviour
     public void expandGridDown()
     {
         destroyGrid();
-        renderGrid(rows++, columns);
+        renderGrid(++rows, columns);
     }
 
     public void expandGridRight()
     {
         destroyGrid();
-        renderGrid(rows, columns++);
+        renderGrid(rows, ++columns);
     }
 
     public void toggleGrid()

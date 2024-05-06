@@ -15,4 +15,11 @@ MonoBehaviour:
   isCustomProfile: 1
   startBehavior: 0
   recognitionConfidenceLevel: 1
-  speechCommands: []
+  speechCommands:
+  - localizationKey: 
+    keyword: Delete
+    keyCode: 8
+    action:
+      id: 0
+      description: None
+      axisConstraint: 0

@@ -4,11 +4,11 @@ ScriptsOnlyBuild:
     - CloneItem
     - CloneLineRenderer
     - ColorChanging
+    - DeleteElement
     - ElementCollisions
     - ElementLinker
     - Grid
     - NewItemHandler
-    - Trashcan
     Microsoft.MixedReality.OpenXR.dll:
     - Microsoft.MixedReality.OpenXR.HPMixedRealityControllerProfile
     - Microsoft.MixedReality.OpenXR.HandTrackingFeaturePlugin
@@ -16,6 +16,10 @@ ScriptsOnlyBuild:
     - Microsoft.MixedReality.OpenXR.MotionControllerFeaturePlugin
     - Microsoft.MixedReality.OpenXR.Remoting.AppRemotingPlugin
     - Microsoft.MixedReality.OpenXR.Remoting.PlayModeRemotingPlugin
+    Microsoft.MixedReality.Toolkit.Editor.Inspectors.dll:
+    - Microsoft.MixedReality.Toolkit.Editor.MixedRealitySpeechCommandsProfileInspector
+    - Microsoft.MixedReality.Toolkit.Editor.MixedRealityToolkitConfigurationProfileInspector
+    - Microsoft.MixedReality.Toolkit.Input.Editor.MixedRealityInputSystemProfileInspector
     Microsoft.MixedReality.Toolkit.Editor.Utilities.dll:
     - Microsoft.MixedReality.Toolkit.Utilities.Editor.ProjectPreferences
     Microsoft.MixedReality.Toolkit.Providers.OpenXR.dll:
@@ -34,6 +38,7 @@ ScriptsOnlyBuild:
     - Microsoft.MixedReality.Toolkit.Input.PokePointer
     - Microsoft.MixedReality.Toolkit.Input.RiggedHandVisualizer
     - Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer
+    - Microsoft.MixedReality.Toolkit.Input.SpeechInputHandler
     - Microsoft.MixedReality.Toolkit.Input.SpherePointer
     - Microsoft.MixedReality.Toolkit.Input.SpherePointerGrabPoint
     - Microsoft.MixedReality.Toolkit.Input.SpherePointerVisual
@@ -184,143 +189,145 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1776}
     - Class: 114
-      Script: {instanceID: 1922}
+      Script: {instanceID: 1904}
     - Class: 114
-      Script: {instanceID: 2076}
+      Script: {instanceID: 1924}
     - Class: 114
-      Script: {instanceID: 2312}
+      Script: {instanceID: 2078}
     - Class: 114
-      Script: {instanceID: 2328}
+      Script: {instanceID: 2314}
     - Class: 114
-      Script: {instanceID: 2540}
+      Script: {instanceID: 2330}
     - Class: 114
-      Script: {instanceID: 2544}
+      Script: {instanceID: 2542}
     - Class: 114
-      Script: {instanceID: 2672}
+      Script: {instanceID: 2546}
     - Class: 114
-      Script: {instanceID: 2774}
+      Script: {instanceID: 2674}
     - Class: 114
-      Script: {instanceID: 2812}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 2906}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 2908}
     - Class: 114
-      Script: {instanceID: 2946}
+      Script: {instanceID: 2940}
     - Class: 114
-      Script: {instanceID: 3072}
+      Script: {instanceID: 2948}
     - Class: 114
-      Script: {instanceID: 3172}
+      Script: {instanceID: 3074}
     - Class: 114
-      Script: {instanceID: 3210}
+      Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 3262}
+      Script: {instanceID: 3212}
     - Class: 114
-      Script: {instanceID: 3376}
+      Script: {instanceID: 3264}
     - Class: 114
-      Script: {instanceID: 3522}
+      Script: {instanceID: 3378}
     - Class: 114
-      Script: {instanceID: 3554}
+      Script: {instanceID: 3524}
     - Class: 114
-      Script: {instanceID: 3758}
+      Script: {instanceID: 3556}
     - Class: 114
-      Script: {instanceID: 3772}
+      Script: {instanceID: 3760}
     - Class: 114
-      Script: {instanceID: 3814}
+      Script: {instanceID: 3774}
     - Class: 114
-      Script: {instanceID: 3838}
+      Script: {instanceID: 3816}
     - Class: 114
-      Script: {instanceID: 3900}
+      Script: {instanceID: 3840}
     - Class: 114
-      Script: {instanceID: 4334}
+      Script: {instanceID: 3902}
     - Class: 114
-      Script: {instanceID: 4348}
+      Script: {instanceID: 4336}
     - Class: 114
-      Script: {instanceID: 4368}
+      Script: {instanceID: 4350}
     - Class: 114
-      Script: {instanceID: 4498}
+      Script: {instanceID: 4370}
     - Class: 114
-      Script: {instanceID: 4554}
+      Script: {instanceID: 4500}
     - Class: 114
-      Script: {instanceID: 4568}
+      Script: {instanceID: 4556}
     - Class: 114
-      Script: {instanceID: 4616}
+      Script: {instanceID: 4570}
     - Class: 114
-      Script: {instanceID: 4622}
+      Script: {instanceID: 4618}
     - Class: 114
-      Script: {instanceID: 4666}
+      Script: {instanceID: 4624}
     - Class: 114
-      Script: {instanceID: 4726}
+      Script: {instanceID: 4668}
     - Class: 114
-      Script: {instanceID: 4820}
+      Script: {instanceID: 4728}
     - Class: 114
-      Script: {instanceID: 4826}
+      Script: {instanceID: 4822}
     - Class: 114
-      Script: {instanceID: 5062}
+      Script: {instanceID: 4828}
     - Class: 114
       Script: {instanceID: 5064}
     - Class: 114
-      Script: {instanceID: 5120}
+      Script: {instanceID: 5066}
     - Class: 114
-      Script: {instanceID: 5320}
+      Script: {instanceID: 5122}
     - Class: 114
-      Script: {instanceID: 5428}
+      Script: {instanceID: 5322}
     - Class: 114
-      Script: {instanceID: 5538}
+      Script: {instanceID: 5418}
     - Class: 114
-      Script: {instanceID: 5636}
+      Script: {instanceID: 5432}
     - Class: 114
-      Script: {instanceID: 5642}
+      Script: {instanceID: 5542}
+    - Class: 114
+      Script: {instanceID: 5640}
+    - Class: 114
+      Script: {instanceID: 5646}
     - Class: 114
       Script: {instanceID: 5822}
     - Class: 114
-      Script: {instanceID: 5840}
+      Script: {instanceID: 5826}
     - Class: 114
-      Script: {instanceID: 5916}
+      Script: {instanceID: 5844}
     - Class: 114
-      Script: {instanceID: 5952}
+      Script: {instanceID: 5920}
     - Class: 114
-      Script: {instanceID: 6038}
+      Script: {instanceID: 5956}
     - Class: 114
-      Script: {instanceID: 6304}
+      Script: {instanceID: 6042}
     - Class: 114
-      Script: {instanceID: 6324}
+      Script: {instanceID: 6308}
     - Class: 114
-      Script: {instanceID: 6474}
+      Script: {instanceID: 6328}
     - Class: 114
-      Script: {instanceID: 6618}
+      Script: {instanceID: 6478}
     - Class: 114
-      Script: {instanceID: 6712}
+      Script: {instanceID: 6622}
     - Class: 114
-      Script: {instanceID: 6872}
+      Script: {instanceID: 6716}
     - Class: 114
-      Script: {instanceID: 7120}
+      Script: {instanceID: 6876}
     - Class: 114
-      Script: {instanceID: 7272}
+      Script: {instanceID: 7124}
     - Class: 114
-      Script: {instanceID: 7338}
+      Script: {instanceID: 7276}
     - Class: 114
-      Script: {instanceID: 7372}
+      Script: {instanceID: 7342}
     - Class: 114
-      Script: {instanceID: 7780}
+      Script: {instanceID: 7376}
     - Class: 114
-      Script: {instanceID: 7804}
+      Script: {instanceID: 7784}
     - Class: 114
-      Script: {instanceID: 8210}
+      Script: {instanceID: 7808}
     - Class: 114
-      Script: {instanceID: 8256}
+      Script: {instanceID: 8026}
     - Class: 114
-      Script: {instanceID: 8682}
+      Script: {instanceID: 8216}
     - Class: 114
-      Script: {instanceID: 8704}
+      Script: {instanceID: 8262}
     - Class: 114
-      Script: {instanceID: 8738}
+      Script: {instanceID: 8688}
     - Class: 114
-      Script: {instanceID: 26164}
+      Script: {instanceID: 8710}
     - Class: 114
-      Script: {instanceID: 26684}
-    - Class: 114
-      Script: {instanceID: 27320}
+      Script: {instanceID: 8744}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -490,6 +497,12 @@ ScriptsOnlyBuild:
     assemblyName: Microsoft.MixedReality.Toolkit.SDK.dll
     namespaceName: Microsoft.MixedReality.Toolkit.UI
     className: ToolTipBackgroundCorners
+  - hash:
+      serializedVersion: 2
+      Hash: 5329b9618614165b377514886a2d424c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CloneLineRenderer
   - hash:
       serializedVersion: 2
       Hash: a0ddc289f00acb478e31a7bde049eed6
@@ -1515,7 +1528,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Trashcan
+    className: DeleteElement
   - hash:
       serializedVersion: 2
       Hash: a306e12d896ddcca949923c805691027
@@ -1776,6 +1789,12 @@ ScriptsOnlyBuild:
     className: TransitionArmModel
   - hash:
       serializedVersion: 2
+      Hash: e28aee0fe1e1a56f66047e5552adc40e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ElementCollisions
+  - hash:
+      serializedVersion: 2
       Hash: c2b5e6cb3a146e84ac08f3415df48174
     assemblyName: Microsoft.MixedReality.Toolkit.SDK.dll
     namespaceName: Microsoft.MixedReality.Toolkit.UI.BoundsControl
@@ -1968,7 +1987,7 @@ ScriptsOnlyBuild:
     className: InteractableReceiver
   - hash:
       serializedVersion: 2
-      Hash: 78b86cce914c69c88eff51f406e40143
+      Hash: 3cd2ed98455a926cd0db6cdfda5c4719
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Grid
@@ -2700,6 +2719,12 @@ ScriptsOnlyBuild:
     className: InputSystemUIInputModule
   - hash:
       serializedVersion: 2
+      Hash: de1c24a403451964afe8e30dfe43d19a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ElementLinker
+  - hash:
+      serializedVersion: 2
       Hash: 64e748cb7d04fe71e105222f9b66b089
     assemblyName: Microsoft.MixedReality.OpenXR.dll
     namespaceName: Microsoft.MixedReality.OpenXR.Remoting
@@ -2992,24 +3017,6 @@ ScriptsOnlyBuild:
     assemblyName: Microsoft.MixedReality.Toolkit.dll
     namespaceName: Microsoft.MixedReality.Toolkit.Utilities
     className: ClippingPlane
-  - hash:
-      serializedVersion: 2
-      Hash: de1c24a403451964afe8e30dfe43d19a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ElementLinker
-  - hash:
-      serializedVersion: 2
-      Hash: 5329b9618614165b377514886a2d424c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CloneLineRenderer
-  - hash:
-      serializedVersion: 2
-      Hash: e28aee0fe1e1a56f66047e5552adc40e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ElementCollisions
   platform: 21
   scenePathNames:
   - Assets/Scenes/Menu.unity

@@ -21,6 +21,6 @@ public class CloneItem : MonoBehaviour
 
         clone.SetActive(true);
 
-        Trashcan.gridElements.Add(clone);
+        DeleteElement.gridElements.Add(clone);
     }
 }

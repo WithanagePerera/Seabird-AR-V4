@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,11 +41,12 @@ public class CloneLineRenderer : MonoBehaviour
                 return;
         }
 
-        Debug.LogError($"Object 1 name: {object1.name}");
-        Debug.LogError($"Object 2 name: {object2.name}");
+        //Debug.LogError($"Object 1 name: {object1.name}");
+        //Debug.LogError($"Object 2 name: {object2.name}");
 
         LineRenderer clone = Instantiate(lineClone);
         clone.gameObject.SetActive(true);
+
         clone.transform.parent = lineClone.transform.parent;
         cloneName.Append("_");
         lineClone.name = name.ToString();
@@ -52,8 +54,38 @@ public class CloneLineRenderer : MonoBehaviour
         clone.GetComponent<ElementLinker>().object1 = object1;
         clone.GetComponent<ElementLinker>().object2 = object2;
 
+        addNewConnectiontoHash(object1, object2, clone);
 
         recentLinks[0] = object1;
         recentLinks[1] = object2;
+    }
+
+    public void addNewConnectiontoHash(GameObject object1, GameObject object2, LineRenderer line)
+    {
+        if (ElementLinker.connections.ContainsKey(object1))
+        {
+            ArrayList connections = ElementLinker.connections[object1];
+            connections.Add(line);
+            ElementLinker.connections[object1] = connections;
+        }
+        else
+        {
+            ArrayList connections = new ArrayList();
+            connections.Add(line);
+            ElementLinker.connections[object1] = connections;
+        }
+
+        if (ElementLinker.connections.ContainsKey(object2))
+        {
+            ArrayList connections = ElementLinker.connections[object2];
+            connections.Add(line);
+            ElementLinker.connections[object2] = connections;
+        }
+        else
+        {
+            ArrayList connections = new ArrayList();
+            connections.Add(line);
+            ElementLinker.connections[object2] = connections;
+        }
     }
 }
